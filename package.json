@@ -16,5 +16,10 @@
   "bugs": {
     "url": "https://github.com/SantiagoGuerra/annotation_chart/issues"
   },
-  "homepage": "https://github.com/SantiagoGuerra/annotation_chart#readme"
+  "homepage": "https://github.com/SantiagoGuerra/annotation_chart#readme",
+  "devDependencies": {
+    "webpack": "^4.44.1",
+    "webpack-cli": "^3.3.12",
+    "webpack-dev-server": "^3.11.0"
+  }
 }
