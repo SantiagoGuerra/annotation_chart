@@ -5,3 +5,134 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+:root {
+  --main-color: #B6000E;
+  --secondary-color: #FF6A33;
+  --third-color: #20bf6b;
+}
+
+#container {
+  max-width: 1020px;
+  width: 100%;
+  margin: auto;
+  margin-top: 120px;
+  position: relative;
+  display: flex;
+  overflow: hidden;
+}
+
+#chart {
+ width: 100%;
+ height: 100%;
+}
+
+.apexcharts-toolbar {
+  display: none;
+}
+
+.btn-annotate {
+  position: absolute;
+  top: 0;
+  left: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 16px;
+  z-index: 999;
+  border: none;
+  color: white;
+  width: 90px;
+  cursor: pointer;
+  font-weight: 600;
+  background: rgb(182,0,14);
+  background: linear-gradient(35deg, rgba(182,0,14,1) 20%, rgba(255,106,51,1) 100%);
+}
+
+.btn-annotate:hover, .btn-create:hover {
+  opacity: .8;
+}
+
+.btn-annotate:focus, .btn-create:focus {
+  border-radius: 16px;
+  outline: none;
+
+}
+
+.btn-annotate > i, .btn-create > i {
+  font-size: 24px;
+  font-weight: 300;
+  margin-right: 8px;
+}
+
+.btn-create {
+  
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 16px;
+  border: none;
+  color: white;
+  width: 110px;
+  cursor: pointer;
+  font-weight: 600;
+  background: rgb(182,0,14);
+  background: linear-gradient(35deg, rgba(182,0,14,1) 20%, rgba(255,106,51,1) 100%);
+}
+
+.annotation-form {
+  background: rgb(226, 226, 226);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding: 12px;
+  width: 0;
+  transform: translateX(420px);
+  transition: transform .3s ease-in-out;
+  display: none;
+}
+
+.plot-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  width: 100%;
+  margin-top: 48px;
+  color: rgb(121, 121, 121);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.annotation-form__date > span,
+.annotation-form__price > span{
+  font-weight: 600;
+  color: var(--main-color)
+}
+
+.annotation-form__date {
+  margin-bottom: 8px;
+}
+
+textarea {
+  padding: 12px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+}
+
+.active {
+  display: flex;
+  transform: translateX(0);
+  width: 420px;
+
+}
+
+.apexcharts-point-annotation-label {
+  width: 200px !important;
+}
+
+.hidde {
+  display: none;
+}
+

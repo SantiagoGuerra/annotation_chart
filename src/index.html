@@ -4,8 +4,39 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Annotation Chart</title>
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
 </head>
 <body>
-  <div id="chart"></div>
+  <div id="container">
+    <div id="chart">
+      
+    </div>
+    <button class="btn-annotate" id="new-annotation">
+      <i class="ri-sticky-note-line"></i>
+      NEW
+    </button>
+
+
+    <form class="annotation-form">
+      <div class="plot-info">
+        <p class="annotation-form__date">
+          <span>Date:</span>
+          07/02/2019
+        </p>
+  
+        <p class="annotation-form__price">
+          <span>Price:</span>
+          $ 100.00 USD
+        </p>
+        
+
+      </div>
+      <textarea name="annotation" id="annotation" cols="30" rows="10" placeholder="Annotation" required></textarea>
+      <button type="submit" class="btn-create">
+        <i class="ri-add-line"></i>
+        CREATE
+      </button>
+    </form>
+  </div>
 </body>
 </html>
